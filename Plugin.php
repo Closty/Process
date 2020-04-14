@@ -4,8 +4,8 @@
  *
  * @package Process
  * @author 瓶子
- * @version 1.1.0
- * @link https://blog.clost.net
+ * @version 2.1.3
+ * @link https://www.clost.net/index.php/jishujiaocheng/470.html
  */
 
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
@@ -76,8 +76,11 @@ class Process_Plugin implements Typecho_Plugin_Interface
         );
         $ProcessColor = new Typecho_Widget_Helper_Form_Element_Select('ProcessColor', $colors, 'blue', _t('进度条颜色'));
         $ProcessTheme = new Typecho_Widget_Helper_Form_Element_Select('ProcessTheme', $types, 'flash', _t('进度条主题'));
+        $githubusernameDescription = _t("注意:请在Github中Folk<a href='https://github.com/closty/Process'>本项目</a>后，在此处填写您的Github用户名;例如closty");
+		$githubusername = new Typecho_Widget_Helper_Form_Element_Text('githubusername', NULL, '', _t('您的Github用户名:'), $githubusernameDescription);
         $form->addInput($ProcessColor);
         $form->addInput($ProcessTheme);
+		$form->addInput($githubusername->addRule('required', _t('Github用户名不能为空！不会请填写closty即可')));
     }
 
     /**
@@ -98,8 +101,8 @@ class Process_Plugin implements Typecho_Plugin_Interface
     public static function render()
     {
         $config = Typecho_Widget::widget('Widget_Options')->plugin('Process');
-        $pluginUrl = "https://cdn.jsdelivr.net/gh/HubSpot/pace" ;
-        $themeUrl = "https://cdn.jsdelivr.net/gh/HubSpot/pace" . '/themes/' . $config->ProcessColor . '/pace-theme-' . $config->ProcessTheme . '.css';
+        $pluginUrl = "https://cdn.jsdelivr.net/gh/$config->githubusername/Process" ;
+        $themeUrl = "https://cdn.jsdelivr.net/gh/$config->githubusername/Process" . '/themes/' . $config->ProcessColor . '/pace-theme-' . $config->ProcessTheme . '.css';
         echo '<link href="' . $themeUrl . '" rel="stylesheet" />';
         echo <<<EOT
             <script> paceOptions = { elements: {selectors: ['#footer']}};</script>
