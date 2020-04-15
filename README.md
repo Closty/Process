@@ -7,6 +7,11 @@
 
  - 通过上面的github链接，下载最新版本，将会得到一个Process的压缩包，将其解压在typecho根目录`/usr/plugins`下。
  - 将以下的代码复制到你想要呈现加载进度的页面。
+```
+<!--加载进度条插件-->
+<?php Typecho_Plugin::factory('Process')->render(); ?>
+```
+
    如果想要所有界面都有加载进度条，可以放在`usr/themes/你主题名字如defaut/header.php`的头部，如图所示。
 
 ![将代码置于header.php中][3]
