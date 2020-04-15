@@ -21,8 +21,15 @@
 ```
    
  - 在typecho后台>控制台>插件，找到Process开启，Fork本项目后在设置中填写您的github用户名并进行更换进度条动画效果、颜色的更改。
+   <details>
+   <summary> 如何Fork本项目？</summary>
+   登陆您的github账号，进入github的[本项目页面][6]（可能您以位临本页面），点击右上角的Fork按钮，如图所示。
+   
+   ![Fork本项目][7]
+   
+   </details>
 
-至此，访问你的网站，你就可以在你的网站上面看到效果啦！默认是动画效果：右上角转蓝色圈
+ - 至此，访问你的网站，你就可以在你的网站上面看到效果啦！默认是动画效果：右上角转蓝色圈
 
 **相关截图**
 
@@ -37,6 +44,8 @@
 
   [1]: https://github.com/Closty/Process/releases
   [2]: https://github.com/HubSpot/pace
-  [3]: https://www.clost.net/usr/uploads/2020/03/2537890914.jpg
+  [3]: https://cdn.jsdelivr.net/gh/closty/tuchuang/usr/uploads/2020/04/3416466155.jpg
   [4]: https://www.clost.net/usr/uploads/2020/03/570445020.png
   [5]: https://cdn.jsdelivr.net/gh/614286240/tuchuang/usr/uploads/2020/04/1475598232.gif
+  [6]: https://github.com/Closty/Process
+  [7]: https://cdn.jsdelivr.net/gh/closty/tuchuang/usr/uploads/2020/04/3749713206.png
