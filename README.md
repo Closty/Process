@@ -8,20 +8,24 @@
 
  - 通过上面的github链接，下载最新版本，将会得到一个Process的压缩包，将其解压在typecho根目录`/usr/plugins`下。
  - 将以下的代码复制到你想要呈现加载进度的页面。
+   <details>
+   <summary> 点击此处查看代码</summary>
+   如果想要所有界面都有加载进度条，可以放在`usr/themes/你主题名字如defaut/header.php`的头部，如图所示。
+   
+   ![将代码置于header.php中][3]
+   
+   </details>
 ```
 <!--加载进度条插件-->
 <?php Typecho_Plugin::factory('Process')->render(); ?>
 ```
-
-   如果想要所有界面都有加载进度条，可以放在`usr/themes/你主题名字如defaut/header.php`的头部，如图所示。
-
-![将代码置于header.php中][3]
-
+   
  - 在typecho后台>控制台>插件，找到Process开启，Fork本项目后在设置中填写您的github用户名并进行更换进度条动画效果、颜色的更改。
 
 至此，访问你的网站，你就可以在你的网站上面看到效果啦！默认是动画效果：右上角转蓝色圈
 
 **相关截图**
+
 
 
 
