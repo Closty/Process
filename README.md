@@ -40,8 +40,30 @@
 
 ![设置界面][4]
 
+以下是相关演示；均已设置为黑色，可以自行选择颜色
 
 ![Process黑色翻转圆圈型][5]
+
+![flash控件型.gif](https://cdn.jsdelivr.net/gh/closty/tuchuang/usr/uploads/2020/04/940786729.gif)
+
+![大号数字型.gif](https://cdn.jsdelivr.net/gh/closty/tuchuang/usr/uploads/2020/04/2668313096.gif)
+
+![翻转圆圈型.gif](https://cdn.jsdelivr.net/gh/closty/tuchuang/usr/uploads/2020/04/2582744789.gif)
+
+![缓存加载型.gif](https://cdn.jsdelivr.net/gh/closty/tuchuang/usr/uploads/2020/04/1988166656.gif)
+
+![角示器型.gif](https://cdn.jsdelivr.net/gh/closty/tuchuang/usr/uploads/2020/04/2302104356.gif)
+
+![居中常规型.gif](https://cdn.jsdelivr.net/gh/closty/tuchuang/usr/uploads/2020/04/3044598873.gif)
+
+![雷达扫描型.gif](https://cdn.jsdelivr.net/gh/closty/tuchuang/usr/uploads/2020/04/3369267188.gif)
+
+![萌萌哒跳跃型.gif](https://cdn.jsdelivr.net/gh/closty/tuchuang/usr/uploads/2020/04/3767308857.gif)
+
+![左侧填充型.gif](https://cdn.jsdelivr.net/gh/closty/tuchuang/usr/uploads/2020/04/4085822504.gif)
+
+更多主题请自行探索。
+
 
 
   [1]: https://github.com/Closty/Process/releases
