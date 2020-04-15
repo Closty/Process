@@ -23,7 +23,7 @@
  - 在typecho后台>控制台>插件，找到Process开启，Fork本项目后在设置中填写您的github用户名并进行更换进度条动画效果、颜色的更改。
    <details>
    <summary> 如何Fork本项目？</summary>
-   登陆您的github账号，进入github的 [Process项目][6]（可能您以位临本页面），点击右上角的Fork按钮，如图所示。
+   登陆您的github账号，访问<https://github.com/Closty/Process>进入github的Process页面中，点击右上角的Fork按钮，如图所示。
    
    ![Fork本项目][7]
    
