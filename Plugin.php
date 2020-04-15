@@ -43,6 +43,16 @@ class Process_Plugin implements Typecho_Plugin_Interface
      */
     public static function config(Typecho_Widget_Helper_Form $form)
     {
+    	       // 插件信息与更新检测
+        function process_update($name, $version){
+            echo "<style>.process-info{text-align:left; margin:1em 0;} .process-info > *{margin:0 0 1rem} .buttons a{background:#000; color:#fff; border-radius:10px; padding:.5em .75em; display:inline-block}</style>";
+            echo "<div class='process-info'>";
+            echo "<h2>Process插件 (".$version.")</h2>";
+            echo "<p>By: <a href='https://www.clost.net'>瓶子</a></p>";
+            echo "<p class='buttons'><a href='https://www.clost.net/index.php/jishujiaocheng/470.html'>项目介绍</a>
+                  <a href='https://github.com/closty/process/releases'>更新日志</a></p>";
+        }
+         process_update("Process", "2.3.1");
         /** 进度条主题配置 */
         $colors = array(
             'black'  => '黑色',
@@ -76,11 +86,11 @@ class Process_Plugin implements Typecho_Plugin_Interface
         );
         $ProcessColor = new Typecho_Widget_Helper_Form_Element_Select('ProcessColor', $colors, 'blue', _t('进度条颜色'));
         $ProcessTheme = new Typecho_Widget_Helper_Form_Element_Select('ProcessTheme', $types, 'flash', _t('进度条主题'));
-        $githubusernameDescription = _t("注意:请在Github中Folk<a href='https://github.com/closty/Process'>本项目</a>后，在此处填写您的Github用户名;例如closty");
+        $githubusernameDescription = _t("注意:请在Github中Folk<a href='https://github.com/closty/Process'>本项目</a>后，在此处填写您的Github用户名；以使用您的github仓库进行CDN加速;例如填写closted");
 		$githubusername = new Typecho_Widget_Helper_Form_Element_Text('githubusername', NULL, '', _t('您的Github用户名:'), $githubusernameDescription);
         $form->addInput($ProcessColor);
         $form->addInput($ProcessTheme);
-		$form->addInput($githubusername->addRule('required', _t('Github用户名不能为空！不会请填写closty即可')));
+		$form->addInput($githubusername->addRule('required', _t('Github用户名不能为空！不会请填写closted即可')));
     }
 
     /**
