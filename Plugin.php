@@ -87,10 +87,10 @@ class Process_Plugin implements Typecho_Plugin_Interface
         $ProcessColor = new Typecho_Widget_Helper_Form_Element_Select('ProcessColor', $colors, 'blue', _t('进度条颜色'));
         $ProcessTheme = new Typecho_Widget_Helper_Form_Element_Select('ProcessTheme', $types, 'flash', _t('进度条主题'));
         $githubusernameDescription = _t("注意:请在Github中Folk<a href='https://github.com/closty/Process'>本项目</a>后，在此处填写您的Github用户名；以使用您的github仓库进行CDN加速;例如填写closted");
-		$githubusername = new Typecho_Widget_Helper_Form_Element_Text('githubusername', NULL, '', _t('您的Github用户名:'), $githubusernameDescription);
+	$githubusername = new Typecho_Widget_Helper_Form_Element_Text('githubusername', NULL, '', _t('您的Github用户名:'), $githubusernameDescription);
         $form->addInput($ProcessColor);
         $form->addInput($ProcessTheme);
-		$form->addInput($githubusername->addRule('required', _t('Github用户名不能为空！不会请填写closted即可')));
+	$form->addInput($githubusername->addRule('required', _t('Github用户名不能为空！不会请填写closted即可')));
     }
 
     /**
