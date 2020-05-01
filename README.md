@@ -1,13 +1,22 @@
-**名称**：Process-v2.3
+## 介绍
+[![](https://img.shields.io/badge/Typecho_plugin-Process-orange?link=https://s.clost.net)](https://github.com/Closty/duanwangzhi)
+[![HitCount](http://hits.dwyl.com/closty/process.svg)](http://hits.dwyl.com/closty/process)
+[![](https://img.shields.io/badge/by-%E7%93%B6%E5%AD%90-green?link=https://www.clost.net)](https://www.clost.net/default/513.html)
 
-**下载**：[点击此处下载最新版本][1]
+![Process2.png](https://cdn.jsdelivr.net/gh/closty/tuchuang/usr/uploads/2020/05/3614026042.png)
+
+这是一款适用于typecho任何主题的加载页面进度条，可以让你的博客加载时显得更加顺滑而不会显得过于突兀,使用本插件可以很好得起到视觉缓冲的作用。本插件有十种颜色可以进行更改，分别是黑、蓝、绿、橙、粉红、紫、银、白、黄。并有十五种主题进行更改，理发店型、萌萌哒跳跃型、大字号数字型、居中常规型等。
+
+## 下载
+[点击此处下载最新版本][1]
 （注：请不要在本页面Download Zip，需要去[链接处release中][1]下载压缩包）
 
-**介绍**：这是一款适用于typecho任何主题的加载页面进度条，可以让你的博客加载时显得更加顺滑而不会显得过于突兀,使用本插件可以很好得起到视觉缓冲的作用。本插件有十种颜色可以进行更改，分别是黑、蓝、绿、橙、粉红、紫、银、白、黄。并有十五种主题进行更改，理发店型、萌萌哒跳跃型、大字号数字型、居中常规型等。
 
-**更新**：将Process轻盈化；仅需下载2Kb大小便可拥有数十种Process主题。自带CDN全程加速，Fork本项目后在设置中填入您的Github用户名将使用属于您自己的仓库！如果不想使用CDN请选择[下载1.1版本](https://www.clost.net/index.php/jishujiaocheng/124.html)!
 
-**部署**
+## 更新
+将Process轻盈化；仅需下载2Kb大小便可拥有数十种Process主题。自带CDN全程加速，Fork本项目后在设置中填入您的Github用户名将使用属于您自己的仓库！如果不想使用CDN请选择[下载1.1版本](https://www.clost.net/index.php/jishujiaocheng/124.html)!
+
+## 快速部署
 
  - 通过上面的github链接，下载最新版本，将会得到一个Process的压缩包，将其解压在typecho根目录`/usr/plugins`下。
  - 将以下的代码复制到你想要呈现加载进度的页面。
@@ -34,7 +43,8 @@
 
  - 至此，访问你的网站，你就可以在你的网站上面看到效果啦！默认动画效果：右上角转蓝色圈
 
-**相关截图**（如果有些图片不显示请挂代理或者去我的博客观看<https://www.clost.net/index.php/jishujiaocheng/470.html>）
+## 相关截图
+[无法查看图片?](https://www.clost.net/index.php/jishujiaocheng/470.html)
 
 
 
